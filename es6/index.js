@@ -50,6 +50,7 @@ class Preston {
         if(!data || typeof data !== 'object') {
             throw new Error('No data specified to send, should be an object');
         }
+        console.log("this is a request data", data);
         requestData = this.build(data);
         console.log("this is a request data", requestData);
         let query = this.stringify(options);
