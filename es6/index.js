@@ -51,6 +51,7 @@ class Preston {
             throw new Error('No data specified to send, should be an object');
         }
         requestData = this.build(data);
+        console.log("this is a request data", requestData);
         let query = this.stringify(options);
         if(query.length) {
             url += `?${query}`;
